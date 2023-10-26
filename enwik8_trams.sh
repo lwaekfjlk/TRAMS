@@ -1,0 +1,17 @@
+CUDA_VISIBLE_DEVICES=0 python train.py \
+    --testing_mode \
+    --dataset enwik8 \
+    --dataset_dir ./data/ \
+    --pretrained_model_name ./model/enwik8/best_xl_finetune_model.ckpt \
+    --n_layer 12 \
+    --d_model 512 \
+    --n_head 8 \
+    --d_head 64 \
+    --d_inner 2048 \
+    --dropout 0.1 \
+    --dropatt 0.0 \
+    --eval_batch_size 10 \
+    --eval_tgt_len 64 \
+    --mem_len 400 \
+    --topk_num 50 \
+    --remain_mem_num 150 \
