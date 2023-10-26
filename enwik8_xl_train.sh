@@ -1,0 +1,23 @@
+CUDA_VISIBLE_DEVICES=0 python train.py \
+    --training_mode \
+    --dataset_dir ./data/ \
+    --dataset enwik8 \
+    --task enwik8_ \
+    --n_layer 12 \
+    --d_model 512 \
+    --n_head 8 \
+    --d_head 64 \
+    --d_inner 2048 \
+    --dropout 0.1 \
+    --dropatt 0.0 \
+    --lr 0.00025 \
+    --warmup_step 0 \
+    --scheduler cosine \
+    --max_training_step 400000 \
+    --tgt_len 512 \
+    --mem_len 200 \
+    --eval_tgt_len 150 \
+    --train_batch_size 5 \
+    --eval_batch_size 10 \
+    --grad_acc_steps 2 \
+    --evaluate_steps 100

@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=0 python ./train.py \
+    --testing_mode \
+    --dataset_dir ./data/ \
+    --adaptive \
+    --dataset wt103 \
+    --use_checkpoint \
+    --pretrained_model_name ./model/wt103/best_xl_finetune_model.ckpt \
+    --n_layer 16 \
+    --d_model 410 \
+    --n_head 10 \
+    --d_head 41 \
+    --d_inner 2100 \
+    --dropout 0.1 \
+    --dropatt 0.0 \
+    --eval_batch_size 10 \
+    --eval_tgt_len 64 \
+    --mem_len 200 \
+    --topk_num 0 \
+    --remain_mem_num 200 \

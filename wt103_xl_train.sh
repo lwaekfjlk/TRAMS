@@ -1,0 +1,24 @@
+CUDA_VISIBLE_DEVICES=1 python train.py \
+    --training_mode \
+    --dataset_dir ./data/ \
+    --adaptive \
+    --dataset wt103 \
+    --task wt103_ \
+    --n_layer 16 \
+    --d_model 410 \
+    --n_head 10 \
+    --d_head 41 \
+    --d_inner 2100 \
+    --dropout 0.1 \
+    --dropatt 0.0 \
+    --lr 0.00001 \
+    --warmup_step 2000 \
+    --scheduler cosine \
+    --max_training_step 100000 \
+    --tgt_len 150 \
+    --mem_len 1000 \
+    --eval_tgt_len 150 \
+    --train_batch_size 4 \
+    --eval_batch_size 10 \
+    --grad_acc_steps 5 \
+    --evaluate_steps 100
