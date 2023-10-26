@@ -36,11 +36,11 @@ sh wt103_trams.sh # for wt103 trams
 ```
 ## Checkpoints
 
-The Transformer-XL checkpoints for wikitext-103 and enwik8 are provided [here]().
+The Transformer-XL checkpoints for wikitext-103 and enwik8 are provided [here](https://drive.google.com/drive/folders/1XpN9nmTxE8l-FZdXhrHvxuf_hxH4Dmjd?usp=sharing).
 
 
 # 📝 Data
-We follow the instructions mentioned in Transformer-XL to collect enwik8 and wiki text-103 data. Data and its tokenized cache are provided [here]().
+We follow the instructions mentioned in Transformer-XL to collect enwik8 and wiki text-103 data. Data and its tokenized cache are provided [here](https://drive.google.com/drive/folders/1Bdc4l3nYG6q3JXDvydFTHNAZniiJFlBY?usp=sharing).
 
 # 📜 License
 
